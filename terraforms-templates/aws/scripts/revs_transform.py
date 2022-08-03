@@ -15,7 +15,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 job.commit()
-bucket = "s3-data-bootcamp-gera1508/"
+bucket = "s3://s3-data-bootcamp-gera1508/"
 path_mr = "raw/movie_review.csv"
 mr = (spark
     .read
