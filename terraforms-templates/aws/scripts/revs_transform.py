@@ -33,4 +33,4 @@ mr = mr.drop('review_str',
              'words',
              'words_filtered')
 
-mr.write.mode('overwrite').parquet(bucket + 'stage/movie_review')
+mr.write.mode('overwrite').parquet(bucket + 'stage/movie_reviews') ##reviewS or review
